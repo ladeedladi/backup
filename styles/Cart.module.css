@@ -1,0 +1,327 @@
+.container{
+    min-height: 100vh;
+    min-width:100vw;
+    
+        display: flex;
+    justify-content: center;
+    align-items: center;
+     height: 100vh;
+}
+.innerContainer{
+    position: absolute;
+    background-color: rgb(255, 254, 254);
+    width: 90vw;
+    height: 90vh;
+    margin: 1rem,1rem,1rem,1rem;
+    
+    display: flex;
+    justify-content: center;
+    
+}
+.leftContainer{
+    flex:1;
+    
+    display: flex;
+}
+.imageGroup{
+    flex: 1;
+    
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+.imageGrp1{
+    flex: 1;
+    
+    margin: .3rem;
+  
+
+}
+.image{
+    width: 100%;
+    height: 100%;
+    flex: 1;
+}
+.imageGrp2{
+    flex: 1;
+   
+    margin: .3rem;
+}
+.imageGrp3{
+    flex: 1;
+    
+    margin: .3rem;
+}
+.imageGrp4{
+    flex: 1;
+    
+    margin: .3rem;
+}
+.imageGrp5{
+    flex: 1;
+   
+    margin: .3rem;
+}
+.singleBigImage{
+    flex: 3;
+    
+    margin: 1.3rem;;
+   
+}
+
+.rightContainer{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.allensolly{
+    flex: 1;
+  
+    margin: 1rem;
+    border-bottom:1px solid rgb(228, 215, 215);
+    display: flex;
+    flex-direction: column;
+
+
+}
+.rating{
+    flex: 1;
+  
+    display: flex;
+}
+.nonIconContainer{
+flex: 3;
+
+display: flex;
+flex-direction: column;
+}
+.allensollytext{
+ 
+    
+   color:tomato;
+   margin:0;
+}
+.p{
+    margin: 0;
+    font-family: 'Brush Script MT', cursive;
+}
+.creamText{
+    flex: 1.5;
+   font-weight: 400;
+    margin: 0;
+    font-family: 'Brush Script MT', cursive;
+}
+
+.iconContainer{
+flex: 1;
+
+display: flex;
+justify-content: end;
+align-items: flex-start;
+}
+
+
+.randomtext{
+    flex: 1;
+    font-family: cursive;
+
+   
+}
+.cartDetails{
+    flex: 2;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.price{
+    flex:1;
+  
+    display: flex;
+    align-items: flex-start;
+}
+.inr{
+    margin-top: 0;
+    margin-right: 1rem;
+    height: 100%;
+}
+.inr h2,.inr p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.inr h2{
+    font-family: Comic Sans MS, Comic Sans, cursive;
+}
+.inr p{
+    color: silver;
+   font-family: monospace;
+}
+.strike{
+   margin-top: 7px;
+   margin-right: 1rem;
+   color: rgb(184, 184, 184);
+   font-family: cursive;
+}
+.offer{
+    margin-top: 0;
+    color: tomato;
+    display: inline-block;
+    font-family: URW Chancery L, cursive;
+}
+.size{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+.size a{
+    margin: 0;
+font-size: small;
+font-weight: 500;
+text-decoration: underline;
+}
+.size h4{
+    margin:0;
+}
+.btnGroup{
+width: 50%;
+
+
+
+}
+.small{
+    border: 1px solid silver;
+   color:silver;
+   background-color: white;
+    border-radius: 1.3rem;
+    width: 4rem;
+    height: 2.5rem;
+    margin-top: .4rem;
+    margin-right: .5rem;
+    cursor: pointer;
+   
+    font-weight: 500;
+}
+.small h4{
+    position: relative;
+    
+}
+.small h4::before{
+content: "";
+
+width: 1.5rem;
+height: .5px;
+background: rgb(211, 207, 203);
+position: absolute;
+left: 0;
+top: 50%;
+
+}
+.small h4::after{
+    content: "";
+   
+    width: 1.5rem;
+    height: .5px;
+    background: rgb(211, 207, 203);
+    position: absolute;
+    right: 0;
+    top: 50%;
+    
+    }
+.medium{
+    margin-top: .4rem;
+    border: 1px solid tomato;
+    color:tomato;
+    background-color: white;
+    border-radius: 1.3rem;
+    width: 4rem;
+    height: 2.5rem;
+    margin-right: .5rem;
+    cursor: pointer;
+    font-weight: 500;
+    
+}
+.large{
+    margin-top: .4rem;
+    border: 1px solid rgb(100, 99, 98);
+    color:rgb(110, 109, 108);
+    border-radius: 1.3rem;
+    background-color: white;
+    width: 4rem;
+    height: 2.5rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+.twoButtons{
+    flex: 1;
+  
+}
+
+.twoButtons{
+    display: flex;
+    flex-direction: column;
+}
+.twoButtons,.twoButtons div{
+    flex: 1;
+}
+
+.lastButton{
+  
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.addToBag{
+    border: none;
+    color:white;
+    background-color: tomato;
+    border-radius: 1.3rem;
+    text-align: center;
+    width: 15rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.addToBag:hover{
+    background-color: rgb(245, 142, 7);
+}
+.addToBag h5{
+    font-size: small;
+    margin-bottom: 20px;
+    margin-left: .5rem;
+   display: inline;
+   
+}
+.productDetails{
+    border: none;
+    color:black;
+    background-color: white;
+    border: 1px solid silver;
+    border-radius: 1.3rem;
+    text-align: center;
+    width: 15rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.productDetails:hover{
+    background-color: silver;
+}
+.productDetails h5{
+    margin-bottom: 20px;
+    margin-left: .5rem;
+   display: inline;
+   font-size: small;
+   
+}
+.click{
+    position: absolute;
+    
+    top: 0;
+    right: 0;
+}

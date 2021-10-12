@@ -1,0 +1,287 @@
+.outerContainer{
+color: brown;
+background-color: rgba(245, 245, 236, 0.959);
+min-height: 100vh;
+max-width: 100vw;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+
+}
+
+.container1{
+background-color: brown;
+width: 80%;
+height: 90%;
+padding-top: 1.5rem;
+display: flex;
+flex-direction: column;
+}
+.returnNav{
+ 
+    height: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.returnNavInside{
+    height: 100%;
+background-color: rgb(238, 235, 235);
+
+
+flex: 1;
+margin-left: 1rem;
+margin-right: 1rem;
+display: flex;
+justify-content: space-between;
+}
+.returnDiv{
+width: 10rem;
+
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.options1{
+    width:23px;
+    height: 19px;
+    background-color: tomato;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+.optionHeading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.optionHeading h4{
+    color: black;
+    margin: 0;
+    padding:0;
+    margin-left: 1rem;
+    
+}
+.returnBtn{
+    width: 3.7rem;
+    padding:0;
+    border-radius: 10px;
+    border: 1px solid rgb(80, 69, 69);
+    cursor: pointer;
+    height: 1.5rem;
+    margin-top: 3px;
+}
+.optionContainer{
+   flex: 1;
+   background-color: blue; 
+   display: flex;
+
+}
+.leftContainer{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+.returnLeftContainer{
+flex:.7;
+background-color: coral;
+margin: 1rem;
+margin-left: 3.5rem;
+display:flex;
+flex-direction: column;
+}
+.cb{
+flex: 1;
+display: flex;
+}
+.cbHeader{
+flex: 1.3;
+display: flex;
+justify-content: flex-start;
+align-items: flex-start;
+}
+.cbHeader h4{
+margin: 0;
+}
+.checkBox{
+flex: 2;
+display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+}
+.checkBox input{
+margin-top: 5px;
+}
+.pcs{
+flex: 1;
+
+display: flex;
+
+}
+.pcsHeader{
+flex: 1.3;
+display: flex;
+justify-content: flex-start;
+align-items: flex-start;
+
+}
+.pcsHeader h4{
+    margin: 0;
+}
+.pieces{
+flex: 2;
+
+}
+.pieces form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+}
+
+.select{
+    width: 100%;
+    border: none;
+    border-radius: 1rem ;
+    height: 1.5rem;
+}
+.reasonForReturn{
+flex: 1;
+
+display: flex;
+}
+.commment{
+flex: 1;
+background-color: darkkhaki;
+display: flex;
+}
+.commentHeader{
+    flex: 1.3;
+display: flex;
+justify-content: flex-start;
+align-items: flex-start;
+
+}
+.commentHeader h4{
+    margin: 0;
+}
+.btnGrp{
+    flex: 1;
+    background-color: cornflowerblue;
+    display: flex;
+    
+}
+.btnHeader{
+    flex: 1.3;
+    background-color: cyan;
+}
+.btnHeader h4{
+    margin: 0;
+}
+.btnContainer{
+    flex: 2;
+    background-color: crimson;
+}
+.btnGroup{
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.small{
+    border: 1px solid silver;
+   color:silver;
+   background-color: white;
+    border-radius: 1.3rem;
+    width: 4rem;
+    height: 2.5rem;
+    margin-right: .5rem;
+    cursor: pointer;
+   margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+.small h4{
+    margin: 0;
+}
+.medium{
+    border: 1px solid tomato;
+    color:tomato;
+    background-color: white;
+    border-radius: 1.3rem;
+    width: 4rem;
+    height: 2.5rem;
+    margin-right: .5rem;
+    cursor: pointer;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+
+}
+.large{
+    border: 1px solid rgb(100, 99, 98);
+    color:rgb(110, 109, 108);
+    border-radius: 1.3rem;
+    background-color: white;
+    width: 4rem;
+    height: 2.5rem;
+    cursor: pointer;
+    font-weight: 500;
+    margin-right: .5rem;
+    margin-bottom: 1.5rem;
+
+}   
+.xl{
+    border: 1px solid rgb(100, 99, 98);
+    color:rgb(110, 109, 108);
+    border-radius: 1.3rem;
+    background-color: white;
+    width: 4rem;
+    height: 2.5rem;
+    cursor: pointer;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+
+}  
+.cmt{
+    flex: 2;
+    display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+}
+.cmt input{
+    width: 100%;
+    height: 6rem;
+    border: 1px solid black;
+    border-radius: .5rem;
+}
+.continue{
+
+background-color: darkred;
+display: flex;
+align-items: flex-start;
+justify-content: flex-end;
+}
+.continue button{
+  border-radius: 1rem;
+  background-color: rgb(184, 182, 182);
+  color: rgb(247, 242, 242);
+  border: none;
+    width: 6rem;
+    height: 2rem;
+}
+.pickupAddress{
+    height: 1.5rem;
+    background-color: cornflowerblue;
+}
+.returnAction{
+    height: 1.5rem;
+    background-color: cyan;
+}
+.rightContainer{
+    flex: 1.3;
+    background-color: chocolate;
+}
