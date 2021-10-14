@@ -103,15 +103,15 @@ console.log(returned);
     const steps = [
         {
             label:1,
-
+            comp:<Comp11/>
         },
         {
             label:2,
-
+            comp:<Comp22/>
         },
         {
           label:3,
-        
+          comp:<Comp33/>
         },
       ];
    
@@ -128,8 +128,8 @@ console.log(returned);
   
 
     <Box sx={{ maxWidth: 600 }}>
-     <Stepper activeStep={activeStep} connector={activeStep===0?<h1>hello</h1>:activeStep>=1?<h1>opdsds</h1>:<h1>threrer</h1>}  orientation="vertical" >
-        
+     <Stepper activeStep={activeStep}  orientation="vertical"       connector={activeStep===0&&<h1>hello</h1>}
+>
      {steps.map((step, index) => (   <Step key={step.label }  >
             <StepLabel  icon={step.label===1?<Comp1/>:step.label===2?<Comp2/>:step.label===3?<Comp3/>:""}>
                 {/* {step.label===1&&<Comp1/>}
@@ -138,13 +138,11 @@ console.log(returned);
                
             </StepLabel>
             <StepContent >
-              <Typography></Typography>
+              
               {console.log(index)}
               <Box sx={{ mb: 2 }}>
                 <div>
-                {step.label===1&&<Comp11 />}
-                {step.label===2&&<Comp22/>}
-                {step.label===3&&<Comp33/>}
+                {step.comp}
         
                 <button  onClick={index === steps.length - 1 ?nextPage:handleNext} className={index === steps.length - 1 ? styles.reqretBtn : styles.ctnBtnOn} name="continue" >
                 {index === steps.length - 1?'REQUEST RETURN':'CONTINUE' }
