@@ -5,6 +5,7 @@ import { CssBaseline } from '@mui/material'
 import Cart from './Cart'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Return from '../component/Return'
+import Rtn from '../component/Rtn'
 const index = () => {
 
   return (
@@ -20,7 +21,8 @@ const index = () => {
       </Grid>  */}
      {/* <ExpandMoreIcon/>
         <Cart/> */}
-       <Return/>
+       {/* <Return/> */}
+       <Rtn/>
       
     </>
   )

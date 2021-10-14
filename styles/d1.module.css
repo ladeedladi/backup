@@ -1,0 +1,33 @@
+.D1container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-family: DejaVu Sans Mono, monospace	;
+}
+.leftContainer{
+    display: flex;
+    flex-direction: column;
+    
+}
+.leftContainer h4{
+    margin: 0;
+    margin-top: .5rem;
+    margin-left: 2rem;
+}
+.Edit1{
+    width: 4rem;
+    height: 1.5rem;
+    border-radius: 1rem;
+    border: none;
+    color: tomato;
+    background-color: white;
+
+    cursor: pointer;
+}
+.leftContainer h3{
+    margin: 0;
+    display: inline-block;
+    font-weight: 400;
+    font-size: medium;
+    color: silver;
+}

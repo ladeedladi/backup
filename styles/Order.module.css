@@ -1,22 +1,21 @@
 .outerContainer{
-color: brown;
-background-color: rgba(245, 245, 236, 0.959);
+background-color: white;
 min-height: 100vh;
 max-width: 100vw;
 display: flex;
 justify-content: center;
 align-items: center;
 height: 100vh;
-
 }
 
 .container1{
-background-color: brown;
+
 width: 80%;
 height: 90%;
 padding-top: 1.5rem;
 display: flex;
 flex-direction: column;
+min-height: 90%;
 }
 .returnNav{
  
@@ -24,6 +23,7 @@ flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 1rem;
 }
 .returnNavInside{
     height: 100%;
@@ -37,10 +37,10 @@ display: flex;
 justify-content: space-between;
 }
 .returnDiv{
-width: 10rem;
+width: 20rem;
 
 display: flex;
-justify-content: center;
+justify-content: space-around;
 align-items: center;
 }
 .options1{
@@ -51,6 +51,18 @@ align-items: center;
     align-items: center;
     justify-content: center;
     font-weight: 500;
+    cursor: pointer;
+}
+.options1Off{
+    width:23px;
+    height: 19px;
+    background-color: rgb(212, 206, 205);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    cursor: pointer;
+
 }
 .optionHeading{
     display: flex;
@@ -64,20 +76,28 @@ align-items: center;
     margin: 0;
     padding:0;
     margin-left: 1rem;
+    display: inline-block;
     
 }
+.h43{
+    color: black;
+    margin: 0;
+    padding:0;
+    margin-left: 1rem;
+    display: block;
+}
 .returnBtn{
-    width: 3.7rem;
+    width:4.3rem;
     padding:0;
     border-radius: 10px;
-    border: 1px solid rgb(80, 69, 69);
+    border: .2px solid rgb(77, 74, 74);
     cursor: pointer;
     height: 1.5rem;
     margin-top: 3px;
+    background-color: white;
 }
 .optionContainer{
    flex: 1;
-   background-color: blue; 
    display: flex;
 
 }
@@ -87,12 +107,16 @@ align-items: center;
     flex-direction: column;
 }
 .returnLeftContainer{
-flex:.7;
-background-color: coral;
+flex:1.5;
+
 margin: 1rem;
 margin-left: 3.5rem;
 display:flex;
 flex-direction: column;
+}
+.returnLeftContainer h4{
+    font-family: sans-serif;
+    font-weight: 600;
 }
 .cb{
 flex: 1;
@@ -106,18 +130,35 @@ align-items: flex-start;
 }
 .cbHeader h4{
 margin: 0;
+padding-top: 1rem;
+
 }
 .checkBox{
 flex: 2;
 display: flex;
 align-items: flex-start;
 justify-content: flex-start;
+z-index: 0;
+padding-top: 1rem;
 }
 .checkBox input{
 margin-top: 5px;
+
 }
+/* .input:checked::after{
+    content: '';
+    visibility: visible;
+    color: tomato;
+background-color: tomato;
+}
+.input{
+   
+    color: tomato;
+background-color: tomato;
+} */
 .pcs{
 flex: 1;
+margin-top: 1rem;
 
 display: flex;
 
@@ -127,14 +168,17 @@ flex: 1.3;
 display: flex;
 justify-content: flex-start;
 align-items: flex-start;
-
+padding-top: 1rem;
 }
 .pcsHeader h4{
+    margin-top: 1rem;
+
     margin: 0;
 }
 .pieces{
-flex: 2;
 
+flex: 2;
+margin-top: .5rem;
 }
 .pieces form{
     width: 100%;
@@ -143,8 +187,14 @@ flex: 2;
 align-items: flex-start;
 justify-content: flex-start;
 }
+.exgH4{
 
+   
+
+}
 .select{
+    margin-top: 1rem;
+
     width: 100%;
     border: none;
     border-radius: 1rem ;
@@ -156,8 +206,9 @@ flex: 1;
 display: flex;
 }
 .commment{
+    margin-top: 1rem;
 flex: 1;
-background-color: darkkhaki;
+
 display: flex;
 }
 .commentHeader{
@@ -172,26 +223,28 @@ align-items: flex-start;
 }
 .btnGrp{
     flex: 1;
-    background-color: cornflowerblue;
+   
     display: flex;
     
 }
 .btnHeader{
     flex: 1.3;
-    background-color: cyan;
+    
 }
 .btnHeader h4{
     margin: 0;
+    padding-top: 1rem;
 }
 .btnContainer{
     flex: 2;
-    background-color: crimson;
+    
 }
 .btnGroup{
     flex: 1;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
+    padding-top: 1rem;
 }
 .small{
     border: 1px solid silver;
@@ -260,28 +313,336 @@ justify-content: flex-start;
 }
 .continue{
 
-background-color: darkred;
+margin-top: 1rem;
 display: flex;
 align-items: flex-start;
 justify-content: flex-end;
 }
-.continue button{
+.ctnBtn{
   border-radius: 1rem;
-  background-color: rgb(184, 182, 182);
+  background-color: rgb(224, 217, 217);
   color: rgb(247, 242, 242);
   border: none;
     width: 6rem;
     height: 2rem;
+    cursor: pointer;
+
+}
+.ctnBtnOn{
+    border-radius: 1rem;
+    background-color: tomato;
+    color: rgb(247, 242, 242);
+    border: none;
+      width: 6rem;
+      height: 2rem;
+      cursor: pointer;
 }
 .pickupAddress{
-    height: 1.5rem;
-    background-color: cornflowerblue;
+    flex: .4;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+}
+.returnNavInside2{
+    height: 100%;
+background-color: rgb(238, 235, 235);
+
+
+flex: 1;
+margin-left: 1rem;
+margin-right: 1rem;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+.options2{
+    width:23px;
+    height: 19px;
+    background-color: tomato;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.options21{
+    width:23px;
+    height: 19px;
+    background-color: rgb(212, 206, 205);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    margin-bottom: 2.5px;
+}
+.optionHeading2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.optionHeading2 h4{
+    color: black;
+    margin: 0;
+    padding:0;
+    margin-left: 1rem;
+    margin-bottom: 5px;
+}
+
+.pkpAdrsContainer{
+  flex: 1;
+  margin: 0 1rem;
+  display: flex;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  padding-right: 1rem;
+}
+.pkpRadioContainer{
+flex: 1;
+display: flex;
+
+}
+.pkpBtnContainer{
+flex: 2;
+
+}
+.pkpBtnContainer input{
+    background-color: crimson;
+}
+.salena{
+    flex: 1;
+    padding-left: .5rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+.salena h4{
+    margin-top: 0;
+    font-family: sans-serif;
+
+}
+.salena p{
+    margin: 0;
+    font-size: small;
+    font-weight: 300;
+    font-family: sans-serif;
+
+}
+.edit{
+   
+    
+        width: 4rem;
+        height: 1.5rem;
+        border-radius: 1rem;
+        border: none;
+        color: tomato;
+        background-color: white;
+
+        cursor: pointer;
+    
+}
+.edit:hover{
+background-color: rgb(216, 213, 213);
+}
+.pkpBtnContainer{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.pkpbtnContinue{
+  border-radius: 1rem;
+  background-color: rgb(224, 217, 217);
+  color: rgb(247, 242, 242);
+  border: none;
+    width: 6rem;
+    height: 2rem;
+    font-size: smaller;
+    cursor: pointer;
+}
+.pkpbtnContinueOn{
+    border-radius: 1rem;
+    background-color: tomato;
+    color: rgb(247, 242, 242);
+    border: none;
+      width: 6rem;
+      height: 2rem;
+      cursor: pointer;
+
+}
+.pkpbtnContinueOn:hover,.pkpbtnContinue:hover{
+    background-color: rgb(252, 67, 34);
+
 }
 .returnAction{
+    flex: .7;
     height: 1.5rem;
-    background-color: cyan;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    font-weight: 600;
 }
+.opm{
+    flex: .5;
+    display: flex;
+
+}
+.opm input{
+    background-color: tomato;
+    margin-top: .5rem;
+}
+.opmRight{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.opmRight h3{
+    margin: 0;
+    margin-top: .3rem;
+    font-weight: 540;
+ }
+.opmRight h5{
+    margin-top: .5rem;
+    font-weight: 450;
+}
+.wallet{
+    flex: 1;
+    display: flex;
+}
+.wallet input{
+    background-color: tomato;
+}
+.walletRight{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+}
+.walletRight h3{
+    margin: 0;
+    font-weight: 540;
+
+}
+.walletRight h6{
+    margin: 0;
+    font-weight: 400;
+}
+.h66{
+    color: silver;
+
+}
+.h55{
+    padding-bottom: 1rem;
+    font-weight: 530;
+}
+.walletRight h5{
+    margin-top: .5rem;
+    margin-bottom: 0;
+}
+.walletRight p{
+    margin: 0;
+    font-weight: 200;
+    font-size: small;
+    margin-top: .3rem;
+    display: inline-block;
+}
+
+.terms{
+    color: tomato;
+    margin: 0;
+    font-weight: 200;
+    font-size: small;
+    margin-top: .3rem;
+    display: inline-block;
+}
+.innerReturn{
+  flex: 1;
+  margin: 0 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.reqretBtn{
+    margin-top: .5rem;
+    width: 12rem;
+    height: 2rem;
+    background-color: tomato;
+    color: white;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+}
+.reqretBtn:hover{
+    background-color: rgb(247, 75, 45);
+}
+.options31{
+    width:23px;
+    height: 19px;
+    background-color: rgb(212, 206, 205);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* .options1Off{
+    width:23px;
+    height: 19px;
+    background-color: rgb(212, 206, 205);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    cursor: pointer;
+
+} */
 .rightContainer{
     flex: 1.3;
-    background-color: chocolate;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.imgContainer{
+    flex: 1;
+    height: 8rem;
+    display: flex;
+   margin-top: 1rem;
+}
+.imgContainer img{
+height: 8rem;
+width: 6rem;
+}
+.imgRightContainer{
+    padding-left: 1rem;
+flex: 2.5;
+}
+.imgRightContainer h4{
+    margin: 0;
+}
+.imgRightContainer p{
+    font-family: monospace;
+}
+.lastH4{
+    padding-bottom: .5rem;
+    font-family: Comic Sans MS, Comic Sans, cursive	;
+    font-weight: 500;
+
+}
+.lastH42{
+    padding-top: .58rem;
+    font-family: Bradley Hand, cursive;
+    font-weight: 300;
+}
+.imgRightContainer p{
+    color: silver;
+    margin: 0;
+    font-size: small;
+}
+.Nav{
+    width: 69.35rem;
+}
+.Nav2{
+    width:40rem
 }
