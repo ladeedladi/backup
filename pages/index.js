@@ -6,6 +6,8 @@ import Cart from './Cart'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Return from '../component/Return'
 import Rtn from '../component/Rtn'
+import Spinner from '../component/Spinner'
+import TxtovrBx from '../component/TxtovrBx'
 const index = () => {
 
   return (
@@ -22,8 +24,9 @@ const index = () => {
      {/* <ExpandMoreIcon/>
         <Cart/> */}
        {/* <Return/> */}
-       <Rtn/>
-      
+       {/* <Rtn/> */}
+      {/* <Spinner/> */}
+      <TxtovrBx/>
     </>
   )
 }

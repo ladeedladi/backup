@@ -1,0 +1,64 @@
+.mainBody{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+   
+}
+.outerSpinner{
+    height: 100px;
+    width: 100px;
+    display: grid;
+    place-items: center;
+    
+    border-radius: 50%;
+    border-top: 2px solid rgb(144, 247, 26);
+    border-right: 2px solid transparent;
+    animation: rotated 0.7s linear infinite ;
+}
+.spinner{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border-top: 2px solid rgb(144, 247, 26);
+    border-right: 2px solid transparent;
+    animation: rotate 0.7s linear infinite ;
+}
+@keyframes rotate{
+    from{
+        transform: rotateZ(0deg);
+        border-top: 2px solid rgb(22, 79, 238);  
+      }
+    to{
+        transform: rotateZ(720deg);
+    }
+}
+@keyframes rotated{
+    from{
+        transform: rotateZ(360deg);
+        border-top: 2px solid rgb(22, 79, 238);  
+      }
+    to{
+        transform: rotateZ(0deg)
+    }
+}
+.mainBodyOftxtovBx{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    margin-top: 30;
+   z-index: 0;
+}
+.box span{
+    position: relative;
+    display: inline-block;
+    top: -.85rem;
+    padding: 0 5px;
+    margin-left: 15px;
+   z-index: -1;
+    background-color:white;
+}
